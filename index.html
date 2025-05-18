@@ -9,21 +9,33 @@
   <style>
     body {
       font-family: sans-serif;
-      background: #0e0e0e;
+      background: linear-gradient(135deg, #3a0ca3, #4361ee, #4cc9f0);
+      background-size: 400% 400%;
+      animation: gradientAnim 15s ease infinite;
       color: white;
       text-align: center;
       padding: 50px 20px;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    @keyframes gradientAnim {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
     }
 
     h1 {
       margin-bottom: 40px;
+      text-shadow: 2px 2px 4px #00000080;
     }
 
     .link {
       display: flex;
       align-items: center;
       justify-content: center;
-      background: #1f1f1f;
+      background: #00000055;
+      backdrop-filter: blur(10px);
       padding: 15px;
       margin: 10px auto;
       width: 300px;
@@ -31,11 +43,12 @@
       text-decoration: none;
       color: white;
       font-size: 18px;
-      transition: background 0.3s;
+      transition: background 0.3s, transform 0.2s;
     }
 
     .link:hover {
-      background: #2e2e2e;
+      background: #00000088;
+      transform: scale(1.03);
     }
 
     .link i {
