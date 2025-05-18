@@ -55,6 +55,15 @@
       margin-right: 10px;
       font-size: 22px;
     }
+
+    .youtube-widget {
+      margin: 30px auto;
+    }
+
+    .twitch-player {
+      margin: 30px auto;
+      max-width: 600px;
+    }
   </style>
 </head>
 <body>
@@ -77,5 +86,28 @@
     <i class="fab fa-github" style="color: white;"></i> GitHub
   </a>
 
+  <!-- Bouton d'abonnement YouTube -->
+  <div class="youtube-widget">
+    <div class="g-ytsubscribe" data-channel="aubinclem" data-layout="default" data-count="default"></div>
+  </div>
+
+  <!-- Lecteur Twitch intégré -->
+  <div class="twitch-player">
+    <iframe
+      src="https://player.twitch.tv/?channel=aubinclem&parent=aubinclem.github.io"
+      height="300"
+      width="100%"
+      allowfullscreen
+      style="border: none; border-radius: 8px;">
+    </iframe>
+  </div>
+
+  <!-- Bouton alternatif pour suivre Twitch -->
+  <a class="link" href="https://www.twitch.tv/aubinclem" target="_blank" style="background: #9146FF;">
+    <i class="fab fa-twitch"></i> Suivre sur Twitch
+  </a>
+
+  <!-- Script YouTube -->
+  <script src="https://apis.google.com/js/platform.js"></script>
 </body>
 </html>
