@@ -7,15 +7,28 @@
   <!-- Font Awesome pour les logos -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
-body {
-  font-family: sans-serif;
-  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-  background-attachment: fixed;
-  color: white;
-  text-align: center;
-  padding: 50px 20px;
-}
+    body {
+      font-family: sans-serif;
+      background: linear-gradient(270deg, red, orange, yellow, green, cyan, blue, violet, red);
+      background-size: 1600% 1600%;
+      animation: rainbow 30s linear infinite;
+      background-attachment: fixed;
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+    }
 
+    @keyframes rainbow {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
 
     h1 {
       margin-bottom: 40px;
@@ -87,7 +100,7 @@ body {
   </div>
 
   <div class="embed-container">
-    <!-- Lecteur YouTube (remplace l'ID par une de tes vidéos) -->
+    <!-- Lecteur YouTube -->
     <iframe
       src="https://www.youtube.com/embed/dQw4w9WgXcQ"
       height="315"
